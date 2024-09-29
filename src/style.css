@@ -134,3 +134,85 @@ button:nth-child(even) {
   border: 1px solid var(--color-primary);
   background: var(--color-button-even);
 }
+
+@media (max-width: 1024px) {
+  .profile-card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .profile-header {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .followers {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttons-redirect {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  h3, p {
+    font-size: 20px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3, p {
+    font-size: 18px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
