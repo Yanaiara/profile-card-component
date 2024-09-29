@@ -1,0 +1,136 @@
+:root {
+  --color-primary: #141843;
+  --color-secondary: #5F627A;
+  --color-accent1: #C6FCFF;
+  --color-accent2: #EDBBFF;
+  --color-accent3: #FFDDB6;
+  --color-background: #f4f4f4;
+  --color-button-odd: #AEF1F5;
+  --color-button-even: #FFDDB6;
+  --color-white: #FFF;
+  --color-light-gray: lightgray;
+  --color-border: #E6E6E6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: 
+    radial-gradient(ellipse 55% 55% at 54% 25%, var(--color-accent1), transparent 50%),
+    radial-gradient(ellipse 100% 100% at 30% 60%, var(--color-accent2), transparent 50%),
+    radial-gradient(ellipse 100% 100% at 60% 50%, var(--color-accent3), transparent 50%);
+  background-size: cover;
+}
+
+h2 {
+  color: var(--color-primary);
+  font-family: 'Merriweather', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 4px;
+}
+
+h3 {
+  color: var(--color-secondary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 11px;
+}
+
+p {
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  fill: url("../src/profile-image.jpg") var(--color-light-gray) -62.688px 0px / 150.15% 100% no-repeat;
+  stroke-width: 10px;
+  stroke: var(--color-border);
+}
+
+.profile-card {
+  border-radius: 30px;
+  border: 20px solid var(--color-white);
+  background: rgba(255, 255, 255, 0.70);
+  padding: 45px 37px 0 121px;
+  width: 1098px;
+  height: 544px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 40px;
+}
+
+.followers {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.followers p {
+  text-align: center;
+}
+
+.vl {
+  border-left: 2px solid var(--color-primary);
+  height: 70px;
+  margin: 0 45px;
+}
+
+.buttons-redirect {
+  display: flex;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 10px;
+  margin-right: 23px;
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+button:nth-child(odd) {
+  border: 1px solid var(--color-primary);
+  background: var(--color-button-odd);
+}
+
+button:nth-child(even) {
+  border: 1px solid var(--color-primary);
+  background: var(--color-button-even);
+}
